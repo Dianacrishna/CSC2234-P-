@@ -1,0 +1,31 @@
+a=[1 2 3;4 5 6];
+d=[7 8 ;9 10; 11 12];
+
+[m,n]=size(a);
+[m1,n1]=size(b);
+
+if n~=m1
+    error("dimensions not match");
+end
+
+c=zeros(m,n1);
+
+%for j=1:m
+    %for i=1:n
+        %c(j,i)=c(j,i)+a(j,i)*b(i,j);
+    %end
+%end
+
+for i=1:m % 1:2 1st ite i=1
+    for j=1:n1 %1 2 j=1 j=2
+        for k=1:n %1 3 k=1 k=2 k=3
+            c(i,j)=c(i,j)+a(i,k)*b(k,j); 
+            %c(1,1)=0+a(1,1)*b(1,1)
+            %c(1,1)=7+a(1,2)*b(2,1)
+            %c(1,1)=25+a(1,3)*b(3,1)=58
+        end
+    end
+end
+
+disp("multiplication of a and b")
+disp(c)

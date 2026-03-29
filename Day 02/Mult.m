@@ -1,0 +1,27 @@
+function c=Mult(a,d)
+
+[m,n]=size(a);
+[m1,n1]=size(d);
+
+if n~=m1
+    error('Matrix dimensions do not match for multiplication');
+end
+
+c=zeros(m,n1);
+
+for i=1:m % 1:2 1st ite i=1
+    for j=1:n1 %1 2 j=1 j=2
+        for k=1:n %1 3 k=1 k=2 k=3
+            c(i,j)=c(i,j)+a(i,k)*d(k,j); 
+            %c(1,1)=0+a(1,1)*b(1,1)
+            %c(1,1)=7+a(1,2)*b(2,1)
+            %c(1,1)=25+a(1,3)*b(3,1)=58
+        end
+    end
+end
+
+disp('Result of Matrix Multiplication:')
+disp(C)
+
+end
+

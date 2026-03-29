@@ -1,0 +1,109 @@
+a = 5;
+b = 3;
+c = a + b; 
+
+
+c = a - b;
+
+c = a * b;
+
+c = a / b;   
+c = a ./ b;
+
+c = a^b;  Exponentiation
+
+
+A = [1 2 3 4 5];
+sum(A);
+mean(A)
+max(A);
+min(A);
+
+
+Matrix Creation:
+A = [1, 2, 3; 4, 5, 6; 7, 8, 9];
+size(A)
+zeros(2,3);
+ones(2,3);
+
+num = input('Enter a number: ');
+square = num^2;
+disp(square);
+
+
+Matrix Transpose
+B = A.';
+
+Matrix Multiplication
+C = A * B;
+
+Element-wise Operations
+D = A .* B;    
+E = A .^ 2;
+
+Matrix Inverse
+A_inv = inv(A);
+
+Square Root:
+x = sqrt(16);
+
+Exponential
+x = exp(1); 
+
+Logarithm
+y = log(10);     
+z = log10(100);
+
+Sine, Cosine, Tangent:
+angle = pi / 4;
+s = sin(angle);
+
+Sum of Elements:
+total = sum([1, 2, 3, 4]); 
+
+
+If-Else Statements:
+x = 5;
+if x > 0
+    disp('Positive');
+else
+    disp('Non-positive');
+end
+
+
+For Loop:
+for i = 1:5
+    disp(i);
+end
+
+for i = 5:-1:1
+    disp(i);
+end
+
+While Loop:
+i = 1;
+while i <= 5
+    disp(i);
+    i = i + 1;
+end
+
+i = 1;
+
+while true
+    disp(i);
+    i = i + 1;
+    
+    if i > 5
+        break;
+    end
+end
+
+
+n = size(A, 1)
+m = size(A, 2)
+
+
+User-defined Functions
+function result = myFunction(x, y)
+    result = x + y;  
+end
